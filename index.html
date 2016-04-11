@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en" itemscope itemtype="http://schema.org/">
+
+<head>
+
+    <title></title>
+        <!-- CUSTOM META GOES HERE-->
+
+        <!-- DEFAULT -->
+        <meta name="referrer" content="no-referrer">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        <!-- TITLES-->
+        <meta property="og:title" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="parsely-title" content="" />
+
+        <!-- DESCRIPTION-->
+        <meta name="description" content="" />
+        <meta property="og:description" content="" />
+        <meta name="twitter:description" content="" />
+
+        <!-- KEYWORD -->
+        <meta name="keywords" content="" />
+
+        <!-- LINK -->
+        <meta property="og:url" content="" />
+        <meta name="twitter:url" content="">
+
+        <!-- THUMBNAIL IMAGE-->
+        <meta property="og:image" content="" />
+        <meta name="twitter:image:src" content="" />
+        <meta property="og:image:width" content="" />
+        <meta property="og:image:height" content="" />
+
+        <!-- NO NEED TO FILL -->
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary">       
+
+        <!-- CUSTOM CSS GOES HERE-->
+        <link rel="stylesheet" href="css/foundation.css"/>
+        <link rel="stylesheet" href="css/c3.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CUSTOM JS GOES HERE-->
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="js/c3.min.js"></script>
+        <script src="js/d3plus.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="row content">
+
+    <div id="headline">
+        Athletes currently suspended by IAAF for Anti-Doping Rule Violation
+    </div>
+
+    <div class="instruction" style="padding: 0 15px;">
+            Disclaimer: The data only include athletes that are currently under suspension as of 8/27/2015, but not all the ones that have been punished for anti-doping rule violation - some of whom might be active again after their sanction term. The "inelligible years left" are also calculated as of 8/27/2015.
+    </div>
+
+    <div class="chart_box_mobile large-5 medium-6 small-12 columns">
+        <div id="subhed1" >Country with most suspended athletes</div>
+        <div class="instruction2">
+            Click on a country name below to see athletes from this country. <div class="clear">Clear selection</div>
+        </div>
+        <div id="chart3" ></div>
+
+        <div id="subhed2" >Most used drugs for suspended athletes</div>
+        <div class="instruction2">
+            Click on a drug name below to see who was deemed using them. <div class="clear">Clear selection</div>
+        </div>
+        <div id="chart4" ></div>
+
+    </div>
+
+    <div class="icons_box large-7 medium-6 small-12 columns">
+        <div class="sort_box large-12 columns">
+            <div id="sort1" class="sort selected large-4 medium-4 small-12 columns">Sort by Country</div>
+            <div id="sort2" class="sort large-4 medium-4 small-12 columns">Sort by Sanction Term</div>
+            <div id="sort3" class="sort large-4 medium-4 small-12 columns">Sort by Ineligible Years Left</div>
+        </div>
+        <div class="legend large-3 medium-4 small-12 columns">
+            <div class="male_box"><div id="male_legend"></div><div id="male">Male</div></div>
+            <div class="female_box"><div id="female_legend"></div><div id="female">Female</div></div>
+        </div>
+        <div class="instruction large-9 medium-8 small-12 columns">
+            Each icon represents an athlete currently suspended by IAAF following an anti-doping rule violation. Hover on each icon for more information about the athlete.
+        </div>
+        <div id="icons" class="large-12 medium-12 small-12 columns"></div>
+    </div>
+
+    <div class="chart_box large-5 medium-6 small-12 columns">
+        <div id="subhed1" >Country with most suspended athletes</div>
+        <div class="instruction2">
+            Click on a country name below to see athletes from this country. <div class="clear">Clear selection</div>
+        </div>
+        <div id="chart1" ></div>
+
+        <div id="subhed2" >Most used drugs for suspended athletes</div>
+        <div class="instruction2">
+            Click on a drug name below to see who was deemed using them. <div class="clear">Clear selection</div>
+        </div>
+        <div id="chart2" ></div>
+
+    </div>
+
+
+
+    <div id="tooltip" class="columns large-12 medium-12 small-12"></div>
+
+</div>
+
+
+
+</body>
+
+

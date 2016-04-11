@@ -1,0 +1,220 @@
+body {
+  font-family: "Open Sans";
+}
+
+.content {
+  border-bottom: 1.5px #a9a9a9 solid;
+  margin-bottom: 100px;
+}
+
+#headline {
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.instruction {
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+
+.instruction2 {
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  width:60%;
+  margin-left: 20%;
+}
+
+.clear {
+  text-align: center;
+  margin: 10px;
+  color: #CD5C5C;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clear:hover {
+  opacity: 0.6;
+}
+
+.legend {
+    /*padding-bottom: 10px;*/
+    color: black;
+    float: left;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#female_legend {
+    background-color: #FF69B4;
+    border: 2px solid #FF69B4;
+    width: 20px;
+    height: 5px;
+}
+
+#male_legend {
+    background-color: #1e90ff;
+    border: 2px solid #1e90ff;
+    width: 20px;
+    height: 5px;
+}
+
+#male, #female {
+    display: inline-table;
+    position: relative;
+    bottom: 15px;
+    left: 25px;
+}
+
+.male_box, female_box {
+    display: inline-table;
+/*    position: relative;
+    bottom: 5px;*/
+}
+
+h5 {
+  color: white !important;
+}
+
+#rank2, #rank3 {
+  position: absolute !important;
+  top: -5px;
+  left: 35px;
+  height: 100%;
+  overflow: visible !important;
+
+}
+
+#tooltip {
+  font-size:14px;
+  line-height: 20px !important;
+  color: white !important;
+/*  border: 1px solid #999; */
+  background-color: #333;
+  z-index: 500000000;
+  position: absolute;
+  padding: 10px;
+  line-height: 16px;
+  width: 250px;
+  box-shadow: 3px 3px 5px #333;
+  display: none;
+}
+
+.sort {
+  background-color: #eee;
+  border: #ddd 1px solid;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.selected {
+  background-color: #c0c0c0;
+}
+
+#icons {
+  padding: 0px !important;
+}
+
+.icons_box {
+  padding-bottom: 40px;
+}
+
+.chart_box {
+  border-left: 1.5px #a9a9a9 solid;
+  padding: 0px !important;
+  margin-bottom: 20px;
+}
+
+.chart_box_mobile {
+  display: none;
+}
+
+.sort_box {
+  margin-bottom: 20px;
+  padding: 0px !important;
+}
+
+.athlete {
+  width: 50px;
+  height: 50px;
+  display: inline-table;
+  border-radius: 25px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.male {
+    border: 4px #1E90FF solid;
+}
+
+.female {
+  border: 4px #FF69B4 solid;
+}
+
+.country {
+  object-fit: cover;
+}
+
+text {
+  font-size: 12px;
+}
+
+path {
+  stroke: #333 !important;
+  stroke-width: 1.5px;
+}
+
+#subhed1, #subhed2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+rect, text {
+  cursor: pointer;
+}
+
+/*line {
+  display: none;
+}*/
+@media (max-width: 1021px) {
+  .sort {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+}
+
+@media (max-width: 641px) {
+  .sort {
+    height: 30px;
+  }
+
+  .icons_box {
+    float: right !important;
+  }
+
+  .chart_box {
+    float: left !important;
+    display: none;
+  }
+
+  .chart_box_mobile {
+    display: inline;
+  }
+}
