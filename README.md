@@ -5,7 +5,7 @@
 
 3. The data is pretty clean and straightforward except for the column “rule”. There are misspelled drug names, inconsistent formats, extra space. What’s more, multiple violations for the same athlete are put in the same cell, making it hard to categorize and make analysis on this column. So I cleaned this column by dividing each violation into different columns and clustered them in Open Refine. By doing this, I was able to get the counts of different violations and get the top 10 for the chart.
 
-4. I also calculated the number of doping athletes by country, which makes another interesting chart people would be interested in. Russia is on the top of the list with 43 athletes.
+4. I also calculated the number of doping athletes by country, which makes another chart people would be interested in. Russia is on the top of the list with 43 athletes.
 
 5. Since the number of records is not huge, I decided to make a matrix of all the athletes on the list to allow users to explore the details of each one of them. I used national flags and border colors to categorize them and make it more visually interesting. You can also sort and filter these icons through multiple ways on the page.
 
